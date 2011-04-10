@@ -1,0 +1,92 @@
+/*
+Syntax error: Invalid CSS after "&[href$=": expected identifier or string, was """
+        on line 25 of /Users/samuelc/dev/rails_projects/sample_app/public/stylesheets/sass/blueprint/plugins/link-icons/screen.sass
+
+20:   &[href^="http:"], &[href^="mailto:"], &[href^="http:"]:visited
+21:     padding: 2px 22px 2px 0
+22:     margin: -2px 0
+23:     background-repeat: no-repeat
+24:     background-position: right center
+25:   &[href$="
+26:     &.pdf"], &.doc"], &.xls"], &.rss"], &.rdf"]
+27:       padding: 2px 22px 2px 0
+28:       margin: -2px 0
+29:       background-repeat: no-repeat
+30:       background-position: right center
+
+Backtrace:
+/Users/samuelc/dev/rails_projects/sample_app/public/stylesheets/sass/blueprint/plugins/link-icons/screen.sass:25
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/haml-3.0.25/lib/sass/scss/parser.rb:838:in `expected'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/haml-3.0.25/lib/sass/scss/parser.rb:813:in `expected'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/haml-3.0.25/lib/sass/scss/parser.rb:796:in `expr!'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/haml-3.0.25/lib/sass/scss/parser.rb:542:in `attrib'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/haml-3.0.25/lib/sass/scss/parser.rb:468:in `simple_selector_sequence'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/haml-3.0.25/lib/sass/scss/parser.rb:443:in `_selector'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/haml-3.0.25/lib/sass/scss/parser.rb:431:in `selector_comma_sequence'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/haml-3.0.25/lib/sass/scss/parser.rb:795:in `expr!'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/haml-3.0.25/lib/sass/scss/static_parser.rb:18:in `parse_selector'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/haml-3.0.25/lib/sass/tree/rule_node.rb:189:in `perform!'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/haml-3.0.25/lib/sass/tree/node.rb:305:in `_perform'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/haml-3.0.25/lib/sass/tree/node.rb:213:in `perform'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `block in perform_children'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `map'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `perform_children'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/haml-3.0.25/lib/sass/tree/node.rb:317:in `perform!'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/haml-3.0.25/lib/sass/tree/rule_node.rb:191:in `perform!'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/haml-3.0.25/lib/sass/tree/node.rb:305:in `_perform'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/haml-3.0.25/lib/sass/tree/node.rb:213:in `perform'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `block in perform_children'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `map'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `perform_children'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/haml-3.0.25/lib/sass/tree/node.rb:317:in `perform!'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/haml-3.0.25/lib/sass/tree/root_node.rb:59:in `perform!'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/haml-3.0.25/lib/sass/tree/node.rb:305:in `_perform'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/haml-3.0.25/lib/sass/tree/node.rb:213:in `perform'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/haml-3.0.25/lib/sass/tree/root_node.rb:37:in `perform'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/haml-3.0.25/lib/sass/tree/root_node.rb:29:in `render'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/haml-3.0.25/lib/sass/plugin.rb:223:in `update_stylesheet'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/haml-3.0.25/lib/sass/plugin.rb:88:in `block (2 levels) in update_stylesheets'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/haml-3.0.25/lib/sass/plugin.rb:81:in `each'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/haml-3.0.25/lib/sass/plugin.rb:81:in `block in update_stylesheets'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/haml-3.0.25/lib/sass/plugin.rb:79:in `each'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/haml-3.0.25/lib/sass/plugin.rb:79:in `update_stylesheets'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/haml-3.0.25/lib/sass/plugin.rb:50:in `check_for_updates'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/haml-3.0.25/lib/sass/plugin/rack.rb:40:in `call'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.6/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.6/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/rack-1.2.2/lib/rack/methodoverride.rb:24:in `call'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.6/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.6/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.6/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.6/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/activerecord-3.0.6/lib/active_record/query_cache.rb:32:in `block in call'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/activerecord-3.0.6/lib/active_record/query_cache.rb:12:in `cache'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/activerecord-3.0.6/lib/active_record/query_cache.rb:31:in `call'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.6/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/activesupport-3.0.6/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.6/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/rack-1.2.2/lib/rack/sendfile.rb:107:in `call'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.6/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.6/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/railties-3.0.6/lib/rails/rack/logger.rb:13:in `call'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/rack-1.2.2/lib/rack/runtime.rb:17:in `call'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/activesupport-3.0.6/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/rack-1.2.2/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/rack-1.2.2/lib/rack/lock.rb:11:in `call'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.6/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/railties-3.0.6/lib/rails/application.rb:168:in `call'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/railties-3.0.6/lib/rails/application.rb:77:in `method_missing'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/railties-3.0.6/lib/rails/rack/log_tailer.rb:14:in `call'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/rack-1.2.2/lib/rack/content_length.rb:13:in `call'
+/Users/samuelc/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/rack-1.2.2/lib/rack/handler/webrick.rb:52:in `service'
+/Users/samuelc/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/Users/samuelc/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/Users/samuelc/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"&[href$=\": expected identifier or string, was \"\"\"\A         on line 25 of /Users/samuelc/dev/rails_projects/sample_app/public/stylesheets/sass/blueprint/plugins/link-icons/screen.sass\A \A 20:   &[href^=\"http:\"], &[href^=\"mailto:\"], &[href^=\"http:\"]:visited\A 21:     padding: 2px 22px 2px 0\A 22:     margin: -2px 0\A 23:     background-repeat: no-repeat\A 24:     background-position: right center\A 25:   &[href$=\"\A 26:     &.pdf\"], &.doc\"], &.xls\"], &.rss\"], &.rdf\"]\A 27:       padding: 2px 22px 2px 0\A 28:       margin: -2px 0\A 29:       background-repeat: no-repeat\A 30:       background-position: right center"; }
