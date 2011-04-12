@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!!! 5
 %html
   %head
     %title= title
@@ -10,4 +10,5 @@
       %section.round
         = yield
       = render 'layouts/footer'
+      = debug(params) if Rails.env.development?
 
