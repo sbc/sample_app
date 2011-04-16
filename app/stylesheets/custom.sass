@@ -1,5 +1,29 @@
+@import "base"
+@import "compass"
+@import "blueprint"
+
+@mixin vpadding
+  padding-top: 1em
+  padding-bottom: 1em
+
 .container
-  width: 710px
+  +container
+  +showgrid
+  header, footer
+    +column($blueprint-grid-columns)
+  section.profile
+    +inline-block
+    +vpadding
+    .main
+      +prepend(1)
+      +column(14)
+      +append(1)
+    .sidebar
+      +prepend(1)
+      +column(6)
+      +last
+      +vpadding
+      margin-right: 40px
 
 body
   background: #cff
@@ -7,16 +31,14 @@ body
 header
   padding-top: 20px
   display: inline-block
-  width: 100%
-
-header img
-  padding: 1em
-  background: #fff
+  img
+    float: left
+    padding: 1em
+    background: #fff
 
 section
   margin-top: 1em
   font-size: 120%
-  padding: 20px
   background: #fff
 
   h1
@@ -68,9 +90,7 @@ a.signup_botton
 
 /* Round corners */
 .round
-  -moz-border-radius: 10px
-  -webkit-border-radius: 10px
-  border-radius: 10px
+  +border-radius(10px)
 
 /* Footer */
 
@@ -79,3 +99,19 @@ footer
   margin-top: 10px
   nav
     float: none
+
+/* User show page */
+
+.profile
+  margin-bottom: 0
+  img.gravatar
+    border: 1px solid #999
+    margin-bottom: -15px
+
+.sidebar
+  font-size: 90%
+  vertical-align: top
+  background: #ffc
+  ul
+    list-style: none
+
