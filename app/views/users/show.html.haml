@@ -1,1 +1,16 @@
-#{@user.name}, #{@user.email}
+.profile
+  .main
+    %h1
+      = gravatar_for @user
+      = @user.name
+  .sidebar.round
+    %ul
+      %li
+        %strong
+          Name
+        = @user.name
+      %li
+        %strong
+          URL
+        = link_to user_path(@user), @user
+

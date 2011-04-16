@@ -3,6 +3,8 @@ source 'http://rubygems.org'
 gem 'rails', '3.0.6'
 gem 'sqlite3'
 gem 'haml'
+gem 'compass'
+gem 'gravatar_image_tag'
 
 group :development do
   gem 'rspec-rails'
@@ -12,6 +14,7 @@ end
 group :test do
   gem 'rspec'
   gem 'webrat'
+  gem 'factory_girl_rails', '1.0'
   #gem 'spork'
 end
 

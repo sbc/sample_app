@@ -10,5 +10,7 @@
       %section.round
         = yield
       = render 'layouts/footer'
-      = debug(params) if Rails.env.development?
+      - if Rails.env.development?
+        %div{ :style => 'clear:both; padding-top: 1.5em;' }
+          = debug(params)
 

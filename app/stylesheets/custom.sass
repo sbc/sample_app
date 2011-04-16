@@ -8,22 +8,31 @@
 
 .container
   +container
-  +showgrid
+  // +showgrid
   header, footer
     +column($blueprint-grid-columns)
-  section.profile
+  section
+    +column($blueprint-grid-columns)
     +inline-block
     +vpadding
-    .main
+    .wide
       +prepend(1)
-      +column(14)
+      +column(22)
       +append(1)
-    .sidebar
-      +prepend(1)
-      +column(6)
       +last
-      +vpadding
-      margin-right: 40px
+    .profile
+      padding-left: 40px
+      padding-right: 40px
+      .main
+        // +prepend(1)
+        +column(14)
+        +append(1)
+      .sidebar
+        +prepend(1)
+        +column(6)
+        +last
+        +vpadding
+        // margin-right: 40px
 
 body
   background: #cff

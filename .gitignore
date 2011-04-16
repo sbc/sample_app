@@ -7,3 +7,5 @@ doc/
 *~
 .DS_Store
 *.un~
+public/stylesheets/compiled/
+webrat.log
