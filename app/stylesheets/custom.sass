@@ -15,16 +15,12 @@
     +column($blueprint-grid-columns)
     +inline-block
     +vpadding
-    .wide
-      +prepend(1)
-      +column(22)
-      +append(1)
-      +last
+    +prepend(1)
+    +column(22)
+    +append(1)
+    +last
     .profile
-      padding-left: 40px
-      padding-right: 40px
       .main
-        // +prepend(1)
         +column(14)
         +append(1)
       .sidebar
@@ -35,7 +31,11 @@
         // margin-right: 40px
 
 body
+  +blueprint-typography(true)
   background: #cff
+
+form
+  +blueprint-form
 
 header
   padding-top: 20px
@@ -52,6 +52,7 @@ section
 
   h1
     font-size: 200%
+    margin-bottom: 20px
 
 a
   color: #09c
@@ -83,6 +84,10 @@ nav
         font-weight: bold
         &:visited
           color: #09c
+
+/* Sign up form */
+.field, .actions
+  margin-bottom: 10px
 
 /* Sign up botton */
 a.signup_botton
@@ -118,9 +123,42 @@ footer
     margin-bottom: -15px
 
 .sidebar
-  font-size: 90%
+  // font-size: 90%
   vertical-align: top
   background: #ffc
   ul
     list-style: none
+
+/* Error messages */
+
+.field_with_errors
+  margin-top: 10px
+  padding: 2px
+  background-color: red
+  display: table
+  label
+    color: #fff
+
+#error_explanation
+  width: 400px
+  border: 2px solid red
+  padding: 7px
+  padding-bottom: 7px
+  margin-bottom: 20px
+  background-color: #f0f0f0
+  h2
+    text-align: left
+    font-weight: bold
+    padding: 5px 5px 5px 5px
+    font-size: 12px
+    margin: -7px -7px 5px -7px
+    background-color: #c00
+    color: #fff
+  p
+    color: #333
+    margin-bottom: 0
+    padding: 5px
+  ul li
+    font-size: 12px
+    list-style: square
 

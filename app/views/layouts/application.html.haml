@@ -4,10 +4,12 @@
     %title= title
     = csrf_meta_tag
     = render 'layouts/stylesheets'
-  %body
+  %body.bp
     .container
       = render 'layouts/header'
       %section.round
+        - flash.each do |key, value|
+          .flash{:class => key}= value
         = yield
       = render 'layouts/footer'
       - if Rails.env.development?
