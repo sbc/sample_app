@@ -1,4 +1,6 @@
 - unless @feed_items.empty?
   .microposts
-    = render :partial => 'shared/feed_item', :collection => @feed_items
+    = render :partial => 'shared/feed_item', 
+             :collection => @feed_items, 
+             :locals => { :show_user_info => true }
   = will_paginate @feed_items

@@ -4,8 +4,10 @@
       = gravatar_for @user
       = @user.name
     - unless @user.microposts.empty?
-      .microposts
-        = render @microposts
+      %ul.microposts
+        = render :partial => 'shared/feed_item', 
+                 :collection => @microposts, 
+                 :locals => { :show_user_info => false }
       = will_paginate @microposts
   .sidebar.round
     %ul
