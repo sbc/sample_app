@@ -3,6 +3,10 @@
     %h1
       = gravatar_for @user
       = @user.name
+    - unless @user.microposts.empty?
+      .microposts
+        = render @microposts
+      = will_paginate @microposts
   .sidebar.round
     %ul
       %li
@@ -13,4 +17,8 @@
         %strong
           URL
         = link_to user_path(@user), @user
+      %li
+        %strong
+          Microposts
+        = @user.microposts.count
 

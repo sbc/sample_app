@@ -1,0 +1,8 @@
+.user_info
+  %a{ :href => user_path(current_user) }
+    = gravatar_for_current_user(:size => 30)
+    .user_name
+      = current_user.name
+    %br
+    .microposts
+      = pluralize(current_user.microposts.count, 'micropost')

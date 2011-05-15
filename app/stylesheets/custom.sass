@@ -19,7 +19,7 @@
     +column(22)
     +append(1)
     +last
-    .profile
+    div
       .main
         +column(14)
         +append(1)
@@ -102,6 +102,24 @@ a.signup_botton
   font-weight: bold
   padding: 20px
 
+/* Sidebar */
+div.sidebar
+  vertical-align: top
+  background: #ffc
+  ul
+    list-style: none
+    padding: 0
+  li
+    list-style-type: none
+  div.user_info
+    img
+      float: left
+      margin: 7px 10px 7px 0
+    div
+      padding: 0
+      margin: 0
+      float: left
+
 /* Round corners */
 .round
   +border-radius(10px)
@@ -128,13 +146,6 @@ ul.users
   img.gravatar
     border: 1px solid #999
     margin-bottom: -15px
-
-.sidebar
-  // font-size: 90%
-  vertical-align: top
-  background: #ffc
-  ul
-    list-style: none
 
 /* Error messages */
 
@@ -169,4 +180,40 @@ ul.users
     font-size: 12px
     list-style: square
 
+/* Microposts */
 
+h1.micropost
+  margin-bottom: 0.3em
+
+.microposts
+  margin-top: 1em
+
+  img
+    float: left
+    margin-right: 10px
+
+  li
+    height: 70px
+    border-top: 1px solid #ccc
+    vertical-align: top
+    padding-top: 10px
+    list-style-type: none
+
+  div
+    float: left
+
+  .timestamp
+    font-size: 85%
+    color: #666
+
+  a.delete
+    float: right
+
+form.new_micropost
+  margin-bottom: 2em
+
+form.new_micropost textarea
+  height: 4em
+  margin-bottom: 0
+
+  
