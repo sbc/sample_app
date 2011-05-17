@@ -1,0 +1,8 @@
+%div
+  .main
+    %h1
+      = @title
+    %ul.users
+      = render @users
+    = will_paginate @users
+  = render 'shared/sidebar'

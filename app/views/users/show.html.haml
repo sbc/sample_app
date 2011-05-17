@@ -3,24 +3,11 @@
     %h1
       = gravatar_for @user
       = @user.name
+    = render 'follow_form' if signed_in?
     - unless @user.microposts.empty?
       %ul.microposts
         = render :partial => 'shared/feed_item', 
                  :collection => @microposts, 
                  :locals => { :show_user_info => false }
       = will_paginate @microposts
-  .sidebar.round
-    %ul
-      %li
-        %strong
-          Name
-        = @user.name
-      %li
-        %strong
-          URL
-        = link_to user_path(@user), @user
-      %li
-        %strong
-          Microposts
-        = @user.microposts.count
-
+  = render 'shared/sidebar'

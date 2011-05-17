@@ -6,7 +6,7 @@ describe Relationship do
     @follower = Factory(:user)
     @followed = Factory(:user, :email => Factory.next(:email))
 
-    @relationship = @follower.relationships.build(:followed_id => @followed_id)
+    @relationship = @follower.relationships.build(:followed_id => @followed.id)
   end
 
   it 'should create a new instance given valid attributes' do
@@ -23,7 +23,7 @@ describe Relationship do
     end
 
     it 'should have the right follower' do
-      @relationship.follewer.should == @follower
+      @relationship.follower.should == @follower
     end
 
     it 'should have a followed attribute' do
@@ -32,6 +32,18 @@ describe Relationship do
 
     it 'should have the right followed user' do
       @relationship.followed.should == @followed
+    end
+  end
+
+  describe 'validations' do
+    it 'should require a follower_id' do
+      @relationship.follower_id = nil
+      @relationship.should_not be_valid
+    end
+
+    it 'should require a followed_id' do
+      @relationship.followed_id = nil
+      @relationship.should_not be_valid
     end
   end
 end
